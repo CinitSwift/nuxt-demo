@@ -3,7 +3,7 @@
     <!--  顶部  -->
     <nav class="navbar navbar-light">
       <div class="container">
-        <nuxt-link class="navbar-brand" to="/">conduit</nuxt-link>
+        <nuxt-link class="navbar-brand" to="/">Discuss</nuxt-link>
         <!--        <a class="navbar-brand" href="index.html">conduit</a>-->
         <ul class="nav navbar-nav pull-xs-right">
           <template v-if="user">
