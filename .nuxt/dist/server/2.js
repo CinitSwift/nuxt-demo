@@ -97,22 +97,22 @@ const getComments = slug => {
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./pages/home/index.vue?vue&type=template&id=4e70ba2a&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"home-page"},[_vm._ssrNode("<div class=\"banner\" data-v-4e70ba2a><div class=\"container\" data-v-4e70ba2a><h1 class=\"logo-font\" data-v-4e70ba2a>conduit</h1> <p data-v-4e70ba2a>A place to share your knowledge.</p></div></div> "),_vm._ssrNode("<div class=\"container page\" data-v-4e70ba2a>","</div>",[_vm._ssrNode("<div class=\"row\" data-v-4e70ba2a>","</div>",[_vm._ssrNode("<div class=\"col-md-9\" data-v-4e70ba2a>","</div>",[_vm._ssrNode("<div class=\"feed-toggle\" data-v-4e70ba2a>","</div>",[_vm._ssrNode("<ul class=\"nav nav-pills outline-active\" data-v-4e70ba2a>","</ul>",[(_vm.user)?_vm._ssrNode("<li class=\"nav-item\" data-v-4e70ba2a>","</li>",[_c('nuxt-link',{staticClass:"nav-link",class:{
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./pages/home/index.vue?vue&type=template&id=6937988a&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"home-page"},[_vm._ssrNode("<div class=\"banner\" data-v-6937988a><div class=\"container\" data-v-6937988a><h1 class=\"logo-font\" data-v-6937988a>?????????????</h1> <p data-v-6937988a>A place to share your knowledge.</p></div></div> "),_vm._ssrNode("<div class=\"container page\" data-v-6937988a>","</div>",[_vm._ssrNode("<div class=\"row\" data-v-6937988a>","</div>",[_vm._ssrNode("<div class=\"col-md-9\" data-v-6937988a>","</div>",[_vm._ssrNode("<div class=\"feed-toggle\" data-v-6937988a>","</div>",[_vm._ssrNode("<ul class=\"nav nav-pills outline-active\" data-v-6937988a>","</ul>",[(_vm.user)?_vm._ssrNode("<li class=\"nav-item\" data-v-6937988a>","</li>",[_c('nuxt-link',{staticClass:"nav-link",class:{
                     active: _vm.tab === 'your_feed'
                   },attrs:{"exact":"","to":{
                     name: 'home',
                     query: {
                       tab: 'your_feed'
                     }
-                  }}},[_vm._v("Your Feed\n              ")])],1):_vm._e(),_vm._ssrNode(" "),_vm._ssrNode("<li class=\"nav-item\" data-v-4e70ba2a>","</li>",[_c('nuxt-link',{staticClass:"nav-link",class:{
+                  }}},[_vm._v("Your Feed\n              ")])],1):_vm._e(),_vm._ssrNode(" "),_vm._ssrNode("<li class=\"nav-item\" data-v-6937988a>","</li>",[_c('nuxt-link',{staticClass:"nav-link",class:{
                     active: _vm.tab === 'global_feed'
                   },attrs:{"exact":"","to":{
                     name: 'home',
                     query: {
                       tab: 'global_feed'
                     }
-                  }}},[_vm._v("Global Feed\n              ")])],1),_vm._ssrNode(" "),(_vm.tag)?_vm._ssrNode("<li class=\"nav-item\" data-v-4e70ba2a>","</li>",[_c('nuxt-link',{staticClass:"nav-link",class:{
+                  }}},[_vm._v("Global Feed\n              ")])],1),_vm._ssrNode(" "),(_vm.tag)?_vm._ssrNode("<li class=\"nav-item\" data-v-6937988a>","</li>",[_c('nuxt-link',{staticClass:"nav-link",class:{
                     active: _vm.tab === 'tag'
                   },attrs:{"exact":"","to":{
                     name: 'home',
@@ -120,15 +120,15 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
                       tab: 'tag',
                       tag: _vm.tag
                     }
-                  }}},[_vm._v("#"+_vm._s(_vm.tag)+"\n              ")])],1):_vm._e()],2)]),_vm._ssrNode(" "),_vm._l((_vm.articles),function(article){return _vm._ssrNode("<div class=\"article-preview\" data-v-4e70ba2a>","</div>",[_vm._ssrNode("<div class=\"article-meta\" data-v-4e70ba2a>","</div>",[_c('nuxt-link',{attrs:{"to":{ name: 'profile', params: { username: article.author.username } }}},[_c('img',{attrs:{"src":article.author.image,"alt":""}})]),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"info\" data-v-4e70ba2a>","</div>",[_c('nuxt-link',{staticClass:"author",attrs:{"to":{ name: 'profile', params: { username: article.author.username } }}},[_vm._v("\n                "+_vm._s(article.author.username)+"\n              ")]),_vm._ssrNode(" <span class=\"date\" data-v-4e70ba2a>"+_vm._ssrEscape(_vm._s(_vm._f("date")(article.createdAt,'MMM DD,YYYY')))+"</span>")],2),_vm._ssrNode(" <button"+(_vm._ssrAttr("disabled",article.favoriteDisabled))+(_vm._ssrClass("btn btn-outline-primary btn-sm pull-xs-right",{ active: article.favorited }))+" data-v-4e70ba2a><i class=\"ion-heart\" data-v-4e70ba2a></i>"+_vm._ssrEscape(" "+_vm._s(article.favoritesCount)+"\n            ")+"</button>")],2),_vm._ssrNode(" "),_c('nuxt-link',{staticClass:"preview-link",attrs:{"to":{ name: 'article', params: { slug: article.slug } }}},[_c('h1',[_vm._v(_vm._s(article.title))]),_vm._v(" "),_c('p',[_vm._v(_vm._s(article.description))]),_vm._v(" "),_c('span',[_vm._v("Read more...")])])],2)})],2),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"col-md-3\" data-v-4e70ba2a>","</div>",[_vm._ssrNode("<div class=\"sidebar\" data-v-4e70ba2a>","</div>",[_vm._ssrNode("<p data-v-4e70ba2a>Popular Tags</p> "),_vm._ssrNode("<div class=\"tag-list\" data-v-4e70ba2a>","</div>",_vm._l((_vm.tags),function(item){return _c('nuxt-link',{key:item,staticClass:"tag-pill tag-default",attrs:{"to":{
+                  }}},[_vm._v("#"+_vm._s(_vm.tag)+"\n              ")])],1):_vm._e()],2)]),_vm._ssrNode(" "),_vm._l((_vm.articles),function(article){return _vm._ssrNode("<div class=\"article-preview\" data-v-6937988a>","</div>",[_vm._ssrNode("<div class=\"article-meta\" data-v-6937988a>","</div>",[_c('nuxt-link',{attrs:{"to":{ name: 'profile', params: { username: article.author.username } }}},[_c('img',{attrs:{"src":article.author.image,"alt":""}})]),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"info\" data-v-6937988a>","</div>",[_c('nuxt-link',{staticClass:"author",attrs:{"to":{ name: 'profile', params: { username: article.author.username } }}},[_vm._v("\n                "+_vm._s(article.author.username)+"\n              ")]),_vm._ssrNode(" <span class=\"date\" data-v-6937988a>"+_vm._ssrEscape(_vm._s(_vm._f("date")(article.createdAt,'MMM DD,YYYY')))+"</span>")],2),_vm._ssrNode(" <button"+(_vm._ssrAttr("disabled",article.favoriteDisabled))+(_vm._ssrClass("btn btn-outline-primary btn-sm pull-xs-right",{ active: article.favorited }))+" data-v-6937988a><i class=\"ion-heart\" data-v-6937988a></i>"+_vm._ssrEscape(" "+_vm._s(article.favoritesCount)+"\n            ")+"</button>")],2),_vm._ssrNode(" "),_c('nuxt-link',{staticClass:"preview-link",attrs:{"to":{ name: 'article', params: { slug: article.slug } }}},[_c('h1',[_vm._v(_vm._s(article.title))]),_vm._v(" "),_c('p',[_vm._v(_vm._s(article.description))]),_vm._v(" "),_c('span',[_vm._v("Read more...")])])],2)})],2),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"col-md-3\" data-v-6937988a>","</div>",[_vm._ssrNode("<div class=\"sidebar\" data-v-6937988a>","</div>",[_vm._ssrNode("<p data-v-6937988a>Popular Tags</p> "),_vm._ssrNode("<div class=\"tag-list\" data-v-6937988a>","</div>",_vm._l((_vm.tags),function(item){return _c('nuxt-link',{key:item,staticClass:"tag-pill tag-default",attrs:{"to":{
                 name: 'home',
                 query: {
                   tab: 'tag',
                   tag: item
                 }
-              }}},[_vm._v(_vm._s(item)+"\n            ")])}),1)],2)]),_vm._ssrNode(" "),_vm._ssrNode("<nav data-v-4e70ba2a>","</nav>",[_vm._ssrNode("<ul class=\"pagination\" data-v-4e70ba2a>","</ul>",_vm._l((_vm.totalPage),function(item){return _vm._ssrNode("<li"+(_vm._ssrClass("page-item",{
+              }}},[_vm._v(_vm._s(item)+"\n            ")])}),1)],2)]),_vm._ssrNode(" "),_vm._ssrNode("<nav data-v-6937988a>","</nav>",[_vm._ssrNode("<ul class=\"pagination\" data-v-6937988a>","</ul>",_vm._l((_vm.totalPage),function(item){return _vm._ssrNode("<li"+(_vm._ssrClass("page-item",{
                 active: item === _vm.page
-              }))+" data-v-4e70ba2a>","</li>",[_c('nuxt-link',{staticClass:"page-link",attrs:{"exact":"","to":{
+              }))+" data-v-6937988a>","</li>",[_c('nuxt-link',{staticClass:"page-link",attrs:{"exact":"","to":{
                   name: 'home',
                   query: {
                     tab: _vm.tab,
@@ -139,7 +139,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/home/index.vue?vue&type=template&id=4e70ba2a&scoped=true&
+// CONCATENATED MODULE: ./pages/home/index.vue?vue&type=template&id=6937988a&scoped=true&
 
 // EXTERNAL MODULE: ./api/article.js
 var article = __webpack_require__(27);
@@ -414,7 +414,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   staticRenderFns,
   false,
   injectStyles,
-  "4e70ba2a",
+  "6937988a",
   "7dceee95"
   
 )
