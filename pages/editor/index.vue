@@ -4,21 +4,25 @@
       <div class="row">
 
         <div class="col-md-10 offset-md-1 col-xs-12">
-          <form>
+          <form @submit.prevent="onRelease">
             <fieldset>
               <fieldset class="form-group">
-                <input type="text" class="form-control form-control-lg" placeholder="Article Title">
+                <input v-model="article.title" type="text" class="form-control form-control-lg"
+                       placeholder="Article Title" required>
               </fieldset>
               <fieldset class="form-group">
-                <input type="text" class="form-control" placeholder="What's this article about?">
+                <input v-model="article.description" type="text" class="form-control"
+                       placeholder="What's this article about?" required>
               </fieldset>
               <fieldset class="form-group">
-                <textarea class="form-control" rows="8" placeholder="Write your article (in markdown)"></textarea>
+                <textarea v-model="article.body" class="form-control" rows="8"
+                          placeholder="Write your article (in markdown)" required></textarea>
               </fieldset>
               <fieldset class="form-group">
-                <input type="text" class="form-control" placeholder="Enter tags"><div class="tag-list"></div>
+                <input v-model="article.tagList" type="text" class="form-control" placeholder="Enter tags">
+                <div class="tag-list"></div>
               </fieldset>
-              <button class="btn btn-lg pull-xs-right btn-primary" type="button">
+              <button class="btn btn-lg pull-xs-right btn-primary" type="submit">
                 Publish Article
               </button>
             </fieldset>
@@ -28,17 +32,38 @@
       </div>
     </div>
   </div>
-
-
 </template>
 
 <script>
+import {releaseArticle} from '@/api/article'
+
 export default {
+  name: 'EditorIndex',
   middleware: 'authenticated',
-  name: "Editor"
+  data() {
+    return {
+      article: {
+        title: '',
+        description: '',
+        body: '',
+        tagList: []
+      }
+    }
+  },
+  methods: {
+    async onRelease() {
+      try {
+        await releaseArticle({article: this.article})
+        this.$router.push('/')
+      } catch (err) {
+        const errors = err.response.data.errors
+        alert(errors)
+      }
+    }
+  }
 }
 </script>
 
-<style scoped>
+<style>
 
 </style>

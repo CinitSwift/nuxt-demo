@@ -39,7 +39,7 @@ export const addFavorite = slug => {
 }
 
 /**
- * @description 点赞
+ * @description 取消点赞
  * @returns {AxiosPromise}
  * @param slug
  */
@@ -71,5 +71,18 @@ export const getComments = slug => {
   return request({
     method: 'GET',
     url: `/api/articles/${slug}/comments`
+  })
+}
+
+/**
+ * @description 发布文章
+ * @param data
+ * @returns {AxiosPromise}
+ */
+export const releaseArticle = data => {
+  return request({
+    method: 'POST',
+    url: '/api/articles',
+    data
   })
 }
